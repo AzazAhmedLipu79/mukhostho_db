@@ -1,0 +1,28 @@
+{
+  "collectionName": "security_status",
+  "fieldsCount": 5,
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "max_length": 255
+    },
+    {
+      "name": "status",
+      "type": "int"
+    },
+    {
+      "name": "position_id",
+      "type": "int"
+    },
+    {
+      "name": "contact_id",
+      "type": "string",
+      "max_length": 255
+    }
+  ]
+}
