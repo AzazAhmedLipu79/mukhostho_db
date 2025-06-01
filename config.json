@@ -1,0 +1,40 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 8080,
+    "read_timeout": "30s",
+    "write_timeout": "30s",
+    "max_clients": 1000
+  },
+  "memory": {
+    "max_memory_mb": 2048,
+    "eviction_policy": "lru",
+    "ttl_cleanup_delay": "1m",
+    "gc_interval": "5m"
+  },
+  "persistence": {
+    "data_dir": "./data",
+    "wal_dir": "./data/wal",
+    "snapshot_dir": "./data/snapshots",
+    "backup_dir": "./data/backups",
+    "snapshot_interval": "10m",
+    "wal_sync_policy": "always",
+    "compression_type": "gzip"
+  },
+  "security": {
+    "enable_auth": false,
+    "enable_tls": false,
+    "cert_file": "",
+    "key_file": "",
+    "enable_encryption": false,
+    "encryption_key": ""
+  },
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "output": "stdout",
+    "log_file": "./logs/mukhostho.log",
+    "max_size_mb": 100,
+    "max_backups": 3
+  }
+}
